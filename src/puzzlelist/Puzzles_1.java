@@ -23,7 +23,8 @@ public class Puzzles_1 implements PuzzleList {
 //				"MedianSortedArrays",
 //				"MergeTwoLists",
 //				"RemoveNthFromEnd",
-				"GenerateParentheses"
+//				"GenerateParentheses",
+				"MergeKLists"
 		};
 	}
 	

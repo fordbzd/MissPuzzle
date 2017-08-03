@@ -8,6 +8,19 @@ public class ListNode {
 		val = x;
 	}
 	
+	public ListNode(int[] arr) {
+		if (arr.length > 0) {
+			this.val = arr[0];
+			
+			ListNode node = this;
+			
+			for (int i = 1; i < arr.length; i++) {
+				node.next = new ListNode(arr[i]);
+				node = node.next;
+			}
+		}
+	}
+	
 	public String toString() {
 		StringBuilder s = new StringBuilder();
 		s.append(val);

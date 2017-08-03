@@ -5,7 +5,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		PuzzleList puzzleList = new Puzzles_1();
+//		PuzzleList puzzleList = new Puzzles_1();
+//		PuzzleList puzzleList = new Puzzles_2();
+		PuzzleList puzzleList = new Puzzles_3();
 //		PuzzleList puzzleList = new Amazon();
 		
 
