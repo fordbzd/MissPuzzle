@@ -3,19 +3,34 @@
 Simple runner and organizer for coding puzzles.
 
 ## Feature
-Nothing good but simple. No dependency. You can run from CLI or IDE.
+Write your puzzle and use Junit to test.
+
+## Dependency
+Maven 3+
+Junit 4+
 
 ## Usage
-Put your puzzle in one of the folder under org.misspuzzle.puzzle.
+Build the project:
+```
+mvn clean package
+```
 
-Implement org.misspuzzle.puzzle.Puzzle with a execute() method.
+To run a single test (replace testname with your class name. Wildcard is ok, e.g. Q6*):
+```
+mvn -Dtestname test
+```
 
-You can write your algorithm in a method, and your test in execute().
+To run multiple tests method:
+```
+mvn -Dtestname1,testname2 test
+```
 
-From CLI, complie and run: java Run
+To run a single method:
+```
+mvn -Dtestname#method test
+```
 
-From IDE, click Debug or F5 (for most IDEs). Breakpoint also works.
-
-To exclude file/folder, add them at the begining of Run.java.
-
-To only execute a file, add them at the begining Run.java. (exclude has higher priority than only)
+To run multiple methods:
+```
+mvn -Dtestname#method1+method2 test
+```

@@ -1,18 +1,9 @@
 package org.misspuzzle.puzzle.leetcode;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q6_ZigZagConversion implements Puzzle {
-
-	@Override
-	public void execute() {
-
-		System.out.println(convert("PAYPALISHIRING", 200));
-
-	}
+public class Q6_ZigZagConversion {
 	
     public String convert(String s, int numRows) {
     	if (numRows == 1 || numRows >= s.length()) {
@@ -31,8 +22,6 @@ public class Q6_ZigZagConversion implements Puzzle {
         
         while (count < s.length()) {
         	String c = s.substring(count, count + 1);
-        	
-//        	System.out.println(row);
         	
         	rows.get(row).append(c);
         	
@@ -59,8 +48,6 @@ public class Q6_ZigZagConversion implements Puzzle {
         String result = "";
         
         for (StringBuilder sb : rows) {
-//        	System.out.println(sb.toString());
-        	
         	result += sb.toString();
         }
         

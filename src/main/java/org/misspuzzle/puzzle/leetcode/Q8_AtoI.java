@@ -1,14 +1,6 @@
 package org.misspuzzle.puzzle.leetcode;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class Q8_AtoI implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(myAtoi("-2147483648fdfs"));
-
-	}
+public class Q8_AtoI {
 	
     public int myAtoi(String str) {
         str = str.trim();
