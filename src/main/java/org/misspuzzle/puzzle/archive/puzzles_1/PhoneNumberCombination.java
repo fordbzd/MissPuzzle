@@ -1,17 +1,9 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class PhoneNumberCombination implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(letterCombinations("23"));
-
-	}
+public class PhoneNumberCombination {
 	
     public List<String> letterCombinations(String digits) {
     	List<String> result = new ArrayList<String>();

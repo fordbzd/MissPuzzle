@@ -1,29 +1,8 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
 import org.misspuzzle.datastructure.ListNode;
 
-public class MergeTwoLists implements Puzzle {
-
-	@Override
-	public void execute() {
-		ListNode l1 = new ListNode(1);
-		l1.next = new ListNode(3);
-		l1.next.next = new ListNode(5);
-		
-		ListNode l2 = new ListNode(2);
-		l2.next = new ListNode(4);
-		l2.next.next = new ListNode(6);
-		
-		ListNode result = mergeTwoLists(l1, l2);
-		
-		while (result != null) {
-			System.out.println(result.val);
-			
-			result = result.next;
-		}
-
-	}
+public class MergeTwoLists {
 	
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode root = null;

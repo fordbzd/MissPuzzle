@@ -1,20 +1,8 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import org.misspuzzle.datastructure.ListNode;
 
-public class RemoveNthFromEnd implements Puzzle {
-
-	@Override
-	public void execute() {
-		ListNode root = new ListNode(1);
-		root.next = new ListNode(2);
-		root.next.next = new ListNode(3);
-		
-		System.out.println(removeNthFromEnd(root, 2).toString());
-
-	}
+public class RemoveNthFromEnd {
 	
     public ListNode removeNthFromEnd(ListNode head, int n) {
         int step = 0;

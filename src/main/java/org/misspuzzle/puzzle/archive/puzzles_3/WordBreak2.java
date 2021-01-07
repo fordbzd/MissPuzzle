@@ -1,21 +1,9 @@
 package org.misspuzzle.puzzle.archive.puzzles_3;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class WordBreak2 implements Puzzle {
-
-	@Override
-	public void execute() {
-		List<String> wordDict = Arrays.asList(new String[]{"cat", "cats", "and", "sand", "dog"});
-
-		for (String sentence : wordBreak("catsanddog", wordDict)) {
-			System.out.println(sentence);
-		}
-	}
+public class WordBreak2 {
 	
     public List<String> wordBreak(String s, List<String> wordDict) {
         return dfs(s, wordDict, "", new ArrayList<String>());

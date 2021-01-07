@@ -1,28 +1,9 @@
 package org.misspuzzle.puzzle.amazon;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class MazeShortestStep implements Puzzle{
-
-	@Override
-	public void execute() {
-//		int[][] maze = {
-//				{0, 1, 1, 1, 1},
-//				{0, 0, 0, 0, 1},
-//				{1, 0, 1, 0, 0},
-//				{1, 0, 1, 0, 1},
-//				{1, 0, 0, 0, 1}
-//		};
-//		
-//		System.out.println(findShortestStep(maze, 5, 5, 2, 4));
-		
-		int[][] maze2 = { {0} };
-		System.out.println(findShortestStep(maze2, 1, 1, 0, 0));
-		
-	}
+public class MazeShortestStep {
 	
 	public int findShortestStep(int[][] maze, int m, int n, int x, int y) {
 		

@@ -1,28 +1,13 @@
 package org.misspuzzle.puzzle.archive.puzzles_3;
 
-import org.misspuzzle.puzzle.Puzzle;
+import org.misspuzzle.datastructure.Interval;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.misspuzzle.datastructure.Interval;
-
-public class MergeInterval implements Puzzle {
-
-	@Override
-	public void execute() {
-		List<Interval> list = new ArrayList<Interval>();
-		
-		list.add(new Interval(1, 3));
-		list.add(new Interval(2, 6));
-		list.add(new Interval(8, 10));
-		list.add(new Interval(15, 30));
-		
-		System.out.println(merge(list));
-
-	}
+public class MergeInterval {
 	
     public List<Interval> merge(List<Interval> intervals) {
         Collections.sort(intervals, new Comparator<Interval>() {

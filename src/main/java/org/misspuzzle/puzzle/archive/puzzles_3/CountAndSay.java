@@ -1,14 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_3;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class CountAndSay implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(countAndSay(6));
-
-	}
+public class CountAndSay {
 	
     public String countAndSay(int n) {
         if (n == 1) {

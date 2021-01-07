@@ -1,28 +1,13 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
+import org.misspuzzle.datastructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.misspuzzle.datastructure.TreeNode;
-
-public class FindFrequentTreeSum implements Puzzle {
-
-	@Override
-	public void execute() {
-		TreeNode root = new TreeNode(5);
-		
-		root.left = new TreeNode(2);
-		root.right = new TreeNode(-3);
-		
-		for (int i : findFrequentTreeSum(root)) {
-			System.out.println(i);
-		}
-
-	}
+public class FindFrequentTreeSum {
 	
     public int[] findFrequentTreeSum(TreeNode root) {
     	if (root == null) {

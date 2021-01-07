@@ -1,15 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class LongestCommonPrefix implements Puzzle {
-
-	@Override
-	public void execute() {
-		String[] strs = { "abeee", "abeee", "abeee" };
-
-		System.out.println(longestCommonPrefix(strs));
-	}
+public class LongestCommonPrefix {
 	
     public String longestCommonPrefix(String[] strs) {
     	if (strs.length == 0) {

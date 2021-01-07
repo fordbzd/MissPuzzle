@@ -1,25 +1,11 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
+import org.misspuzzle.datastructure.Point;
 
 import java.util.Stack;
 
 
-public class NumIslands implements Puzzle {
-
-	@Override
-	public void execute() {
-		char[][] grid = {
-				{ '1', '1', '0', '0', '0' },
-				{ '1', '1', '0', '0', '0' },
-				{ '0', '1', '1', '0', '0' },
-				{ '1', '1', '0', '0', '0' },
-				{ '1', '1', '0', '0', '0' }
-		};
-		
-		System.out.println(numIslands(grid));
-
-	}
+public class NumIslands {
 	
     public int numIslands(char[][] grid) {
     	
@@ -70,16 +56,6 @@ public class NumIslands implements Puzzle {
     	
     	return sum;
     	
-    }
-    
-    class Point {
-    	int x;
-    	int y;
-    	
-    	Point(int x, int y) {
-    		this.x = x;
-    		this.y = y;
-    	};
     }
 
 }

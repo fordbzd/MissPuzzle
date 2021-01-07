@@ -1,14 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class MaxProfit2 implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(maxProfit(new int[]{0, 1, 5, 3, 6, 4, 6}));
-
-	}
+public class MaxProfit2 {
 
     public int maxProfit(int[] prices) {
     	if (prices.length < 1 ) {

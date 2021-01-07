@@ -1,28 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class UniquePath2 implements Puzzle {
-
-	@Override
-	public void execute() {
-//		int[][] obstacleGrid = {
-//				{0, 0, 0},
-//				{1, 1, 0},
-//				{0, 0, 0}
-//		};
-		
-//		int[][] obstacleGrid = {
-//				{0},
-//				{0},
-//				{0}
-//		};
-		
-		int[][] obstacleGrid = {{0, 1, 0}};
-		
-		System.out.println(uniquePathsWithObstacles(obstacleGrid));
-
-	}
+public class UniquePath2 {
 	
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int m = obstacleGrid.length;

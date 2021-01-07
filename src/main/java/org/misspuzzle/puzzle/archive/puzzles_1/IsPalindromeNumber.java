@@ -1,14 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class IsPalindromeNumber implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(isPalindrome(0));
-
-	}
+public class IsPalindromeNumber {
 	
     public boolean isPalindrome(int x) {
     	if (x < 0) {

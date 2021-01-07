@@ -1,35 +1,9 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.ArrayList;
 
-public class EvenSum implements Puzzle {
-	
-	public void execute() {
-		
-		int[] test = {10, 20, 30, 5 , 40, 50, 40, 15, 13};
-		
-		try {
-			int[][] a = splitEvenly(test);
-			
-			for(int i = 0; i < a[0].length; i++)
-				System.out.print(a[0][i] + " ");
-			
-			System.out.println();
-			
-			for(int i = 0; i < a[1].length; i++)
-				System.out.print(a[1][i] + " ");
-			
-			System.out.println();
-			
-		} catch (InvalidInputException e) {
-			e.printStackTrace();
-		}
-		
+public class EvenSum {
 
-	}
-	
 	public int[][] splitEvenly(int[] integerList) throws InvalidInputException {
 	    
 	    int sum = 0,

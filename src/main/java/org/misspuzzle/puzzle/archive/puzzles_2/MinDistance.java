@@ -1,14 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class MinDistance implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(minDistance("b", ""));
-
-	}
+public class MinDistance {
 	
     public int minDistance(String word1, String word2) {
         

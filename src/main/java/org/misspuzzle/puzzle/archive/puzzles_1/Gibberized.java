@@ -1,15 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class Gibberized implements Puzzle {
-
-	@Override
-	public void execute() {
-		String s = "aoiUe";
-		System.out.println(s);
-		System.out.println(gibber(s));
-	}
+public class Gibberized {
 	
 	public String gibber(String s) {
 		char[] eligible = {'A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'};

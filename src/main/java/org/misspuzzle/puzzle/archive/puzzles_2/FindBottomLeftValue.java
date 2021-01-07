@@ -1,26 +1,11 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
+import org.misspuzzle.datastructure.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-import org.misspuzzle.datastructure.TreeNode;
-
-public class FindBottomLeftValue implements Puzzle {
-
-	@Override
-	public void execute() {
-		TreeNode root = new TreeNode(4);
-		
-		root.left = new TreeNode(2);
-		root.right = new TreeNode(5);
-		
-		root.right.right = new TreeNode(6);
-		
-		System.out.println(findBottomLeftValue(root));
-
-	}
+public class FindBottomLeftValue {
 	
     public int findBottomLeftValue(TreeNode root) {
     	if (root == null) {

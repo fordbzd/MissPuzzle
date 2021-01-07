@@ -1,18 +1,9 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import org.misspuzzle.datastructure.ListNode;
 
-public class ReverseKGroup implements Puzzle {
+public class ReverseKGroup {
 
-	@Override
-	public void execute() {
-		ListNode root = new ListNode(new int[]{1, 2, 3, 4, 5, 6, 7});
-
-		System.out.println(reverseKGroup(root, 5));
-	}
-	
     public ListNode reverseKGroup(ListNode head, int k) {
         
     	ListNode start = null;

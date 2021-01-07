@@ -1,14 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class LongestPalindromeSubString implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(longestPalindrome("bb"));
-
-	}
+public class LongestPalindromeSubString {
 
 	public String longestPalindrome(String s) {
 

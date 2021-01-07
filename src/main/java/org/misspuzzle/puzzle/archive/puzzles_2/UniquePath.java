@@ -1,14 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class UniquePath implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(uniquePaths(7, 3));
-
-	}
+public class UniquePath {
 	
     public int uniquePaths(int m, int n) {
     	int[] step = new int[m];

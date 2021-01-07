@@ -1,19 +1,11 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class CanCross implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(canCross(new int[]{0,1,2,3,4,8,9,11}));
-
-	}
+public class CanCross {
 	
     public boolean canCross(int[] stones) {
         Map<Integer, Set<Integer>> map = new HashMap<Integer, Set<Integer>>();

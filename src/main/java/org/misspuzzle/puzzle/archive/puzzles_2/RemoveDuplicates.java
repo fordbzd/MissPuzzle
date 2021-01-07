@@ -1,19 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class RemoveDuplicates implements Puzzle {
-
-	@Override
-	public void execute() {
-		int[] nums = {1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4};
-		
-		System.out.println("Length: " + removeDuplicates(nums));
-		
-		for (int n : nums) {
-			System.out.println(n);
-		}
-	}
+public class RemoveDuplicates {
 	
     public int removeDuplicates(int[] nums) {
 		int n = nums.length;

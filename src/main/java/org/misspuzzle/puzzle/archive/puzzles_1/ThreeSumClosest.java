@@ -1,17 +1,8 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.Arrays;
 
-public class ThreeSumClosest implements Puzzle {
-
-	@Override
-	public void execute() {
-		int[] s = {-1, 2, 1, -4};
-		
-		System.out.println(threeSumClosest(s, 1));
-	}
+public class ThreeSumClosest {
 	
 	public int threeSumClosest(int[] nums, int target) {
         

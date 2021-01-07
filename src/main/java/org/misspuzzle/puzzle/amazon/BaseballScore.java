@@ -2,17 +2,7 @@ package org.misspuzzle.puzzle.amazon;
 
 import java.util.Stack;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class BaseballScore implements Puzzle {
-
-	@Override
-	public void execute() {
-		String[] input = {"5", "-2", "4", "Z", "X", "9", "+", "+"};
-		
-		System.out.println(baseBallScore(input));
-
-	}
+public class BaseballScore {
 	
 	public int baseBallScore(String[] input) {
 		int sum = 0;

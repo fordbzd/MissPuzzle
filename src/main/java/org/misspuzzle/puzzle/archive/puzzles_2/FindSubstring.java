@@ -1,21 +1,11 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FindSubstring implements Puzzle {
-
-	@Override
-	public void execute() {
-		String[] words = {"word","good","best","good"};
-		
-		System.out.println(findSubstring("wordgoodgoodgoodbestword", words));
-
-	}
+public class FindSubstring {
 	
     public List<Integer> findSubstring(String s, String[] words) {
         List<Integer> result = new ArrayList<Integer>();

@@ -1,16 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class MaxArea implements Puzzle {
-
-	@Override
-	public void execute() {
-		
-		int[] height = {4, 8, 6, 7, 6};
-		
-		System.out.println(maxArea(height));
-	}
+public class MaxArea{
 
     public int maxArea(int[] height) {
     

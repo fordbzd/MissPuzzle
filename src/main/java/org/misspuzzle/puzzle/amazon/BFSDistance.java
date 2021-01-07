@@ -1,20 +1,10 @@
 package org.misspuzzle.puzzle.amazon;
 
-import org.misspuzzle.puzzle.Puzzle;
+import org.misspuzzle.datastructure.TreeNode;
 
 import java.util.ArrayList;
 
-import org.misspuzzle.datastructure.TreeNode;
-
-public class BFSDistance implements Puzzle {
-
-	@Override
-	public void execute() {
-		int[] test = {7, 4, 1, 8, 10, 6, 9, 5};
-		
-		System.out.println(bstDistance(test, 8, 1, 19));
-
-	}
+public class BFSDistance {
 	
 	public int bstDistance(int[] values, int n, int node1, int node2) {
 

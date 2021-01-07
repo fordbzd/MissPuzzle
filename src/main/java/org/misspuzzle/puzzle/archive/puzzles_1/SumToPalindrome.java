@@ -1,13 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-public class SumToPalindrome implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(getSteps(15));
-		
-	}
+public class SumToPalindrome {
 	
 	public int getSteps(int n) {
 		int step = 0;

@@ -1,26 +1,12 @@
 package org.misspuzzle.puzzle.archive.puzzles_3;
 
-import org.misspuzzle.puzzle.Puzzle;
+import org.misspuzzle.datastructure.Interval;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-import org.misspuzzle.datastructure.Interval;
-
-public class MeetingRoom2 implements Puzzle {
-
-	@Override
-	public void execute() {
-		Interval[] intervals = {
-				new Interval(0, 30),
-				new Interval(5, 10),
-				new Interval(15, 20)
-		};
-		
-		System.out.println(minMeetingRooms(intervals));
-
-	}
+public class MeetingRoom2 {
 	
 	public int minMeetingRooms(Interval[] intervals) {
 		Arrays.sort(intervals, new Comparator<Interval>(){

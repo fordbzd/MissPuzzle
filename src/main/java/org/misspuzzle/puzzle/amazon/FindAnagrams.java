@@ -1,17 +1,9 @@
 package org.misspuzzle.puzzle.amazon;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class FindAnagrams implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(findAnagrams("cbaebabacd", "abc"));
-
-	}
+public class FindAnagrams {
 	
     public List<Integer> findAnagrams(String s, String p) {
     	

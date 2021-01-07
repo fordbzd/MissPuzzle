@@ -1,18 +1,9 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.Stack;
 
 
-public class LargestRectangleArea implements Puzzle {
-
-	@Override
-	public void execute() {
-		int[] heights = {2, 1, 5, 6, 2, 3};
-
-		System.out.println(largestRectangleArea(heights));
-	}
+public class LargestRectangleArea {
 	
     public int largestRectangleArea(int[] heights) {
         Stack<Integer> s = new Stack<Integer>();

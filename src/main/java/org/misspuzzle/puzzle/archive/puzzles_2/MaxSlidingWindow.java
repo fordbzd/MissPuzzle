@@ -1,23 +1,11 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 
-public class MaxSlidingWindow implements Puzzle {
+public class MaxSlidingWindow {
 
-	@Override
-	public void execute() {
-		
-		int[] nums = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
-		
-		for (int n : maxSlidingWindow(nums, 3)) {
-			System.out.println(n);
-		}
-	}
-	
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums == null || k == 0) {
         	return new int[0];

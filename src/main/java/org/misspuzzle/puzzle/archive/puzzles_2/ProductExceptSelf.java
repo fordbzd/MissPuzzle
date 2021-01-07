@@ -1,15 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class ProductExceptSelf implements Puzzle {
-
-	@Override
-	public void execute() {
-		for (int n : productExceptSelf(new int[]{1, 2 ,3, 4})) {
-			System.out.println(n);
-		}
-	}
+public class ProductExceptSelf {
 	
     public int[] productExceptSelf(int[] nums) {
 

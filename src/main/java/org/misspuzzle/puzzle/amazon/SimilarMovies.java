@@ -1,33 +1,8 @@
 package org.misspuzzle.puzzle.amazon;
 
-import org.misspuzzle.puzzle.Puzzle;
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
-
-public class SimilarMovies implements Puzzle {
-
-	@Override
-	public void execute() {
-		Movie m0 = new Movie(0, 0f);
-		Movie m1 = new Movie(1, 6f);
-		Movie m2 = new Movie(2, 2f);
-		Movie m3 = new Movie(3, 3f);
-		Movie m4 = new Movie(4, 4f);
-
-		m0.similarMovies.add(m1);
-		m0.similarMovies.add(m2);
-		m1.similarMovies.add(m3);
-		m2.similarMovies.add(m4);
-		
-		List<Movie> list = getNearest(m0, 2);
-		for (Movie m : list) {
-			System.out.println(m.movieId);
-		}
-	}
+public class SimilarMovies {
 	
 	public List<Movie> getNearest(Movie movie, int numSimilar) {
 		 Comparator<Movie> comparator =  new Comparator<Movie>(){  
@@ -72,21 +47,22 @@ public class SimilarMovies implements Puzzle {
 		}
 	}
 
+	static class Movie
+	{
+		int movieId;
+
+		float rating;
+
+		List<Movie> similarMovies;
+
+		Movie(int movieId, float rating) {
+			this.movieId = movieId;
+			this.rating = rating;
+
+			similarMovies = new ArrayList<Movie>();
+		}
+	}
 }
 
 
-class Movie
-{
-   int movieId;
-   
-   float rating;
-   
-   List<Movie> similarMovies;
-   
-   Movie(int movieId, float rating) {
-	   this.movieId = movieId;
-	   this.rating = rating;
-	   
-	   similarMovies = new ArrayList<Movie>();
-   }
-}
+

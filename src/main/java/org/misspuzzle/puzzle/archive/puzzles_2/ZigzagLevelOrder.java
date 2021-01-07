@@ -1,28 +1,13 @@
 package org.misspuzzle.puzzle.archive.puzzles_2;
 
-import org.misspuzzle.puzzle.Puzzle;
+import org.misspuzzle.datastructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import org.misspuzzle.datastructure.TreeNode;
 
-
-public class ZigzagLevelOrder implements Puzzle {
-
-	@Override
-	public void execute() {
-		TreeNode root = new TreeNode(3);
-		root.left = new TreeNode(9);
-		root.right = new TreeNode(20);
-		
-		root.right.left = new TreeNode(15);
-		root.right.right = new TreeNode(7);
-		
-		System.out.println(zigzagLevelOrder(root));
-
-	}
+public class ZigzagLevelOrder {
 	
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
     	

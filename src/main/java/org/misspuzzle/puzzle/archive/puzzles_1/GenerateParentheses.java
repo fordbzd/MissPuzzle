@@ -1,20 +1,10 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenerateParentheses implements Puzzle {
+public class GenerateParentheses {
 
-	@Override
-	public void execute() {
-
-		for (String s : generateParenthesis(3)) {
-			System.out.println(s);
-		}
-	}
-	
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<String>();
         

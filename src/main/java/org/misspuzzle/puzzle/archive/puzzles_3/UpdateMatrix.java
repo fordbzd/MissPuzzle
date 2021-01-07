@@ -1,30 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_3;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class UpdateMatrix implements Puzzle {
-
-	@Override
-	public void execute() {
-		int[][] matrix = {
-				{1, 1, 1, 0},
-				{1, 1, 0, 0},
-				{1, 1, 1, 1},
-				{1, 1, 1, 1},
-				{0, 1, 0, 1}
-		};
-		
-		matrix = updateMatrix(matrix);
-		
-		for (int[] row : matrix) {
-			for (int value : row) {
-				System.out.print(value + " ");
-			}
-			
-			System.out.println();
-		}
-
-	}
+public class UpdateMatrix {
 	
     public int[][] updateMatrix(int[][] matrix) {
         int m = matrix.length;

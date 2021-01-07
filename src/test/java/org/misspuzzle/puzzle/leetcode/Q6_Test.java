@@ -1,16 +1,15 @@
-package org.misspuzzle.leetcode;
+package org.misspuzzle.puzzle.leetcode;
 
 import org.junit.Test;
-import org.misspuzzle.puzzle.leetcode.Q6_ZigZagConversion;
 
 import static org.junit.Assert.assertEquals;
 
 public class Q6_Test {
 
     @Test
-    public void testZigZagConversion() {
+    public void testcase() {
         final String result = new Q6_ZigZagConversion().convert("PAYPALISHIRING", 200);
 
-        assertEquals(result, "PAYPALISHIRING");
+        assertEquals("PAYPALISHIRING", result);
     }
 }

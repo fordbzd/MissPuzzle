@@ -48,12 +48,6 @@ public class LRUCache {
     		head = node;
     	}
     	
-    	// TEST
-//    	System.out.println("GET - " + key);
-//    	System.out.println(head != null ? head.toString() : "NO LIST");
-//    	System.out.println("TAIL: " + (tail != null ? tail.toReverseString() : "NONE"));
-//    	System.out.println();
-    	
     	return node.value;
     }
     
@@ -93,15 +87,10 @@ public class LRUCache {
 			
 			size++;
     	}
-    	
-    	// TEST
-//    	System.out.println("PUT - " + key);
-//    	System.out.println(head != null ? head.toString() : "NO LIST");
-//    	System.out.println("TAIL: " + (tail != null ? tail.toReverseString() : "NONE"));
-//    	System.out.println();
+
     }
     
-    class DLNode {
+    static class DLNode {
     	int key;
     	int value;
     	DLNode pre;

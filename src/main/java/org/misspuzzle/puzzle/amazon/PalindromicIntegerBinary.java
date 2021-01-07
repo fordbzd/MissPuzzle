@@ -1,18 +1,8 @@
 package org.misspuzzle.puzzle.amazon;
 
-import org.misspuzzle.puzzle.Puzzle;
-
-public class PalindromicIntegerBinary implements Puzzle {
-
-	@Override
-	public void execute() {
-		System.out.println(isPalindromic(10));
-
-	}
+public class PalindromicIntegerBinary {
 	
 	public boolean isPalindromic(int n) {
-		System.out.println(n + " -> " + Integer.toBinaryString(n));
-		
 		char[] s = Integer.toBinaryString(n).toCharArray();
 		
 		int start = 0;

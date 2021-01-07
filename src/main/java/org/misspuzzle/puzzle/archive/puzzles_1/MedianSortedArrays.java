@@ -1,16 +1,6 @@
 package org.misspuzzle.puzzle.archive.puzzles_1;
 
-import org.misspuzzle.puzzle.Puzzle;
-public class MedianSortedArrays implements Puzzle {
-
-	@Override
-	public void execute() {
-		int[] nums1 = {1, 3, 5, 7, 9};
-		int[] nums2 = {0, 2, 4, 6, 8};
-		
-		System.out.println(findMedianSortedArrays(nums1, nums2));
-
-	}
+public class MedianSortedArrays {
 	
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         if(nums1.length > nums2.length) {
