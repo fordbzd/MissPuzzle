@@ -17,20 +17,20 @@ mvn clean package
 
 To run a single test (replace testname with your class name. Wildcard is ok, e.g. Q6*):
 ```
-mvn -Dtestname test
+mvn -Dtest=testname test
 ```
 
 To run multiple tests method:
 ```
-mvn -Dtestname1,testname2 test
+mvn -Dtest=testname1,testname2 test
 ```
 
 To run a single method:
 ```
-mvn -Dtestname#method test
+mvn -Dtest=testname#method test
 ```
 
 To run multiple methods:
 ```
-mvn -Dtestname#method1+method2 test
+mvn -Dtest=testname#method1+method2 test
 ```
