@@ -1,4 +1,4 @@
-package org.misspuzzle.puzzle.leetcode.dailychallange.jan2021;
+package org.misspuzzle.puzzle.leetcode.dailychallange.y2021m1;
 
 import org.junit.Test;
 import org.misspuzzle.utils.Printer;
