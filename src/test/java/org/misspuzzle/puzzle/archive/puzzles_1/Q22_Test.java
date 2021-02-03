@@ -6,10 +6,10 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class GenerateParenthesesTest {
+public class Q22_Test {
     @Test
     public void testcase() {
-        final List<String> result = new GenerateParentheses().generateParenthesis(3);
+        final List<String> result = new Q22_GenerateParenthesis().generateParenthesis(3);
 
         assertEquals(5, result.size());
         assertEquals("((()))", result.get(0));

@@ -3,7 +3,7 @@ package org.misspuzzle.puzzle.archive.puzzles_1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenerateParentheses {
+public class Q22_GenerateParenthesis {
 
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<String>();
