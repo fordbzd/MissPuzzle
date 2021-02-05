@@ -16,7 +16,7 @@ public class Q508_Test {
 		int[] result = new Q508_FindFrequentTreeSum().findFrequentTreeSum(root);
 
 		assertEquals(2, result[0]);
-		assertEquals(4, result[1]);
-		assertEquals(-3, result[2]);
+		assertEquals(-3, result[1]);
+		assertEquals(4, result[2]);
 	}
 }

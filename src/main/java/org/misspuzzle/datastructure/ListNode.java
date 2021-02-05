@@ -7,6 +7,11 @@ public class ListNode {
 	public ListNode(int x) {
 		val = x;
 	}
+
+	public ListNode(int x, ListNode next) {
+		val = x;
+		this.next = next;
+	}
 	
 	public ListNode(int[] arr) {
 		if (arr.length > 0) {
