@@ -12,7 +12,7 @@ public class Q140_Test {
 	public void testcase() {
 		List<String> wordDict = Arrays.asList("cat", "cats", "and", "sand", "dog");
 
-		final List<String> result = new Q140_WordBreak().wordBreak("catsanddog", wordDict);
+		final List<String> result = new Q140_WordBreak2().wordBreak("catsanddog", wordDict);
 
 		assertEquals("cat sand dog", result.get(0));
 	}

@@ -3,7 +3,7 @@ package org.misspuzzle.puzzle.leetcode.p200;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q140_WordBreak {
+public class Q140_WordBreak2 {
 	
     public List<String> wordBreak(String s, List<String> wordDict) {
         return dfs(s, wordDict, "", new ArrayList<String>());
