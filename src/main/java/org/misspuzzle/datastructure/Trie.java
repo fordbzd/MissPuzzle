@@ -1,26 +1,41 @@
 package org.misspuzzle.datastructure;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Trie {
 
-	private Trie[] letters = new Trie[26];
+	private Map<Character, Trie> letters = new HashMap<>();
 
 	private String word;
 
-	/** Initialize your data structure here. */
+	/**
+	 * Initialize your data structure here.
+	 */
 	public Trie() {
 
 	}
 
-	/** Inserts a word into the trie. */
+	public Map<Character, Trie> getLetters() {
+		return letters;
+	}
+
+	public String getWord() {
+		return word;
+	}
+
+	/**
+	 * Inserts a word into the trie.
+	 */
 	public void insert(String word) {
 		Trie root = this;
 
 		for (char c : word.toCharArray()) {
-			int index = c - 'a';
+			Trie trie = root.letters.get(c);
 
-			Trie trie = root.letters[index];
 			if (trie == null) {
-				root.letters[index] = trie = new Trie();
+				trie = new Trie();
+				root.letters.put(c, trie);
 			}
 
 			root = trie;
@@ -29,14 +44,14 @@ public class Trie {
 		root.word = word;
 	}
 
-	/** Returns if the word is in the trie. */
+	/**
+	 * Returns if the word is in the trie.
+	 */
 	public boolean search(String word) {
 		Trie trie = this;
 
 		for (char c : word.toCharArray()) {
-			int index = c - 'a';
-
-			trie = trie.letters[index];
+			trie = trie.letters.get(c);
 
 			if (trie == null) {
 				return false;
@@ -51,16 +66,13 @@ public class Trie {
 	}
 
 	/**
-	 * Returns if there is any word in the trie that starts with the given
-	 * prefix.
+	 * Returns if there is any word in the trie that starts with the given prefix.
 	 */
 	public boolean startsWith(String prefix) {
 		Trie trie = this;
 
 		for (char c : prefix.toCharArray()) {
-			int index = c - 'a';
-
-			trie = trie.letters[index];
+			trie = trie.letters.get(c);
 
 			if (trie == null) {
 				return false;
@@ -69,5 +81,4 @@ public class Trie {
 
 		return true;
 	}
-
 }
