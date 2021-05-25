@@ -6,11 +6,10 @@ import com.google.gson.JsonParser;
 public class Experiment {
 
     public void run() {
-        JsonObject obj = JsonParser.parseString("{\"abc\":123}").getAsJsonObject();
+        long a = 10^15;
+        long b = 11^12;
 
-        int result = obj.get("abc").getAsInt();
-
-        System.out.println(result);
+        System.out.println(a * b);
 
     }
 }
