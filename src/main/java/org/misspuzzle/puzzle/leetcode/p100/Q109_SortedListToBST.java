@@ -1,4 +1,4 @@
-package org.misspuzzle.puzzle.leetcode.p000;
+package org.misspuzzle.puzzle.leetcode.p100;
 
 import org.misspuzzle.datastructure.ListNode;
 import org.misspuzzle.datastructure.TreeNode;
