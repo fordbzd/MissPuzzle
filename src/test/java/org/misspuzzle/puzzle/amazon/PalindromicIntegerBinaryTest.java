@@ -1,6 +1,7 @@
 package org.misspuzzle.puzzle.amazon;
 
 import org.junit.Test;
+import org.misspuzzle.puzzle.amz.PalindromicIntegerBinary;
 
 import static org.junit.Assert.assertFalse;
 

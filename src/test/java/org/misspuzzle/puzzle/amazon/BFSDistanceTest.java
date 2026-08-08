@@ -1,6 +1,7 @@
 package org.misspuzzle.puzzle.amazon;
 
 import org.junit.Test;
+import org.misspuzzle.puzzle.amz.BFSDistance;
 
 import static org.junit.Assert.assertEquals;
 

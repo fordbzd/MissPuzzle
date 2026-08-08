@@ -1,6 +1,7 @@
 package org.misspuzzle.puzzle.amazon;
 
 import org.junit.Test;
+import org.misspuzzle.puzzle.amz.MazeShortestStep;
 
 import static org.junit.Assert.assertEquals;
 

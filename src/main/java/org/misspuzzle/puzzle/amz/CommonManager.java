@@ -1,4 +1,4 @@
-package org.misspuzzle.puzzle.amazon;
+package org.misspuzzle.puzzle.amz;
 
 import java.util.ArrayList;
 
