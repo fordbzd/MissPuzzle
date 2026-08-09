@@ -1,4 +1,4 @@
-package org.misspuzzle.puzzle.openai;
+package org.misspuzzle.puzzle.gpt;
 
 import org.junit.Test;
 import org.misspuzzle.puzzle.gpt.InfectionSpread;

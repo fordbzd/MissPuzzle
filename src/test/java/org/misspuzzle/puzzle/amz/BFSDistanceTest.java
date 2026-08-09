@@ -1,4 +1,4 @@
-package org.misspuzzle.puzzle.amazon;
+package org.misspuzzle.puzzle.amz;
 
 import org.junit.Test;
 import org.misspuzzle.puzzle.amz.BFSDistance;
