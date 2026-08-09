@@ -1,10 +1,9 @@
 package org.misspuzzle.puzzle.amz;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.misspuzzle.datastructure.TreeNode;
-import org.misspuzzle.puzzle.amz.LowestCommonAncestor;
-
-import static org.junit.Assert.assertEquals;
+// import unnecessary in same package
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LowestCommonAncestorTest {
 

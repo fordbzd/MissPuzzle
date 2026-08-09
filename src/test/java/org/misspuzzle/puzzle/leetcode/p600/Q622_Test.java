@@ -1,9 +1,9 @@
 package org.misspuzzle.puzzle.leetcode.p600;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.misspuzzle.datastructure.MyCircularQueue;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Q622_Test {
     @Test

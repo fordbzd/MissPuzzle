@@ -1,8 +1,8 @@
 package org.misspuzzle.puzzle.leetcode.p1300;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Q1354_Test {
     @Test

@@ -1,9 +1,9 @@
 package org.misspuzzle.puzzle.leetcode.p000;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.misspuzzle.datastructure.ListNode;
 
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class Q19_Test {
     @Test

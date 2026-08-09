@@ -1,11 +1,11 @@
 package org.misspuzzle.puzzle.amz;
 
-import org.junit.Test;
-import org.misspuzzle.puzzle.amz.FindAnagrams;
+import org.junit.jupiter.api.Test;
+// import unnecessary in same package
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FindAnagramsTest {
 

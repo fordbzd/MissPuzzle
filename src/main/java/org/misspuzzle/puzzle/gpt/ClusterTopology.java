@@ -156,7 +156,7 @@ public class ClusterTopology {
 
             // 1. Register all children first
             for (Node child : children) {
-                pendingCountChildren.add(child.id);
+                pendingTopologyChildren.add(child.id);
             }
 
             // 2. Now send the requests
@@ -168,10 +168,10 @@ public class ClusterTopology {
         private void handleTopologyResponse(String fromNodeId, Map<String, String> params) {
             String childStr = params.getOrDefault("value", fromNodeId + "()");
             topologyStrings.add(childStr);
-            pendingCountChildren.remove(fromNodeId);
+            pendingTopologyChildren.remove(fromNodeId);
 
             // All children have answered
-            if (pendingCountChildren.isEmpty()) {
+            if (pendingTopologyChildren.isEmpty()) {
                 replyTopology();
             }
         }
@@ -188,8 +188,8 @@ public class ClusterTopology {
             }
 
             // Optional: reset state so the node can be reused
-            totalCount = 0;
-            pendingCountChildren.clear();
+            topologyStrings.clear();
+            pendingTopologyChildren.clear();
         }
 
         private void parseParam(Map<String, String> params, String paramStr) {

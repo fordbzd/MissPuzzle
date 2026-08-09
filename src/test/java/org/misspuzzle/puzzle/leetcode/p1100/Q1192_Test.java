@@ -1,12 +1,11 @@
 package org.misspuzzle.puzzle.leetcode.p1100;
 
-import org.junit.Test;
-import org.misspuzzle.puzzle.leetcode.p1200.Q1209_RemoveDuplicates;
-
+import org.junit.jupiter.api.Test;
+// unused import removed
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Q1192_Test {
     @Test

@@ -16,7 +16,8 @@ public class MyHashMap {
 
     private final int CAPACITY = 10000;
 
-    private final List<Node>[] map = new List[CAPACITY];
+    @SuppressWarnings("unchecked")
+    private final List<Node>[] map = (List<Node>[]) new List[CAPACITY];
 
     /**
      * Initialize your data structure here.

@@ -5,7 +5,6 @@ public class Q960_MinDeletionSize {
 
         int wordLength = strs[0].length();
 
-        int k;
         int min = wordLength - 1;
         int[] dp = new int[wordLength];
         dp[0] = 1;

@@ -1,9 +1,9 @@
 package org.misspuzzle.puzzle.leetcode.p600;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.misspuzzle.datastructure.TreeNode;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Q623_Test {
     @Test
@@ -12,8 +12,8 @@ public class Q623_Test {
 
         TreeNode node1 = root.left = new TreeNode(2);
 
-        TreeNode node2 = node1.left = new TreeNode(3);
-        TreeNode node3 = node1.right = new TreeNode(1);
+        node1.left = new TreeNode(3);
+        node1.right = new TreeNode(1);
 
         final TreeNode result = new Q623_AddOneRow().addOneRow(root, 1, 3);
 

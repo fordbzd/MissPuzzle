@@ -1,12 +1,12 @@
 package org.misspuzzle.puzzle.leetcode.p000;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.misspuzzle.datastructure.Interval;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Q56_Test {
 	@Test

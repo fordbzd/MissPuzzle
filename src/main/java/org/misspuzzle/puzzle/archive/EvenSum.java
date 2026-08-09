@@ -27,7 +27,7 @@ public class EvenSum {
 	    for(int i = 0; i < n; i++) {
 	    	if(result.contains(integerList[i])) {
 	    		splitLists[0][k++] = integerList[i];
-	    		result.remove(new Integer(integerList[i]));
+				result.remove(Integer.valueOf(integerList[i]));
 	    	}
 	    	else
 	    		splitLists[1][j++] = integerList[i];

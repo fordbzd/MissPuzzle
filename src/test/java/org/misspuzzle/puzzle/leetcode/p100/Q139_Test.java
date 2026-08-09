@@ -1,11 +1,11 @@
 package org.misspuzzle.puzzle.leetcode.p100;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static junit.framework.TestCase.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class Q139_Test {

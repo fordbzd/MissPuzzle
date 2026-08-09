@@ -1,6 +1,6 @@
 package org.misspuzzle;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.misspuzzle.puzzle.Experiment;
 
 public class ExperimentTest {

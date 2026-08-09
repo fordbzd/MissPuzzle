@@ -1,9 +1,8 @@
 package org.misspuzzle.puzzle.gpt;
 
-import org.junit.Test;
-import org.misspuzzle.puzzle.gpt.InfectionSpread;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+// import unnecessary in same package
+import static org.junit.jupiter.api.Assertions.*;
 
 public class InfectionSpreadTest {
 

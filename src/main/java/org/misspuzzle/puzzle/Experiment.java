@@ -1,8 +1,7 @@
 package org.misspuzzle.puzzle;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+// removed unused imports
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,8 +19,7 @@ public class Experiment {
         map.put("vol", list);
 
         String s = new Gson().toJson(map);
-
-
+        System.out.println(s);
 
     }
 }

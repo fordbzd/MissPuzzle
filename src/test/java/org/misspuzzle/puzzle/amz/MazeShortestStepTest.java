@@ -1,9 +1,8 @@
 package org.misspuzzle.puzzle.amz;
 
-import org.junit.Test;
-import org.misspuzzle.puzzle.amz.MazeShortestStep;
-
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+// import unnecessary in same package
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MazeShortestStepTest {
 
